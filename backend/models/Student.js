@@ -44,6 +44,6 @@ const studentSchema = new mongoose.Schema(
 );
 
 // Extra safety net: unique index at the DB level (in addition to schema option)
-studentSchema.index({ email: 1 }, { unique: true });
+
 
 module.exports = mongoose.model("Student", studentSchema);
